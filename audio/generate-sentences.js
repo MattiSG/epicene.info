@@ -3,11 +3,13 @@ const fs = require('fs')
 
 
 const MARKERS = {
-	none: '',
-	median: '·',
-	bigDot: '•',
-	dash: '-',
-	slash: '/',
+	bigDot:	'•',
+	dash:	'-',
+	dot:	'.',
+	median:	'·',
+	none:	'',
+	slash:	'/',
+	space:	' ',
 }
 
 for (let markerName in MARKERS) {
