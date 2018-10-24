@@ -1,4 +1,5 @@
 const MARKERS = {
+	none: '',
 	median: '·',
 	bigDot: '•',
 	dash: '-',
