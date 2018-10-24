@@ -1,4 +1,4 @@
 audio/*.aiff
-audio/*.m4a
+web/audio/*.m4a
 
 .DS_Store
