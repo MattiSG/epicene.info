@@ -2,4 +2,8 @@ audio/*.aiff
 web/audio/*.m4a
 web/table.html
 
+google-application-credentials.json
+
+node_modules
+
 .DS_Store

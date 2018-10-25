@@ -12,6 +12,7 @@ const generators = [
 	require('./character'),
 	require('./sentences'),
 	require('./audio'),
+	require('./google-translate'),
 ]
 
 
