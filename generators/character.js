@@ -1,3 +1,5 @@
+module.exports.name = 'Caractère'
+
 module.exports.generate = function generateCharacter(markerName, marker) {
 	return Promise.resolve(marker)
 }

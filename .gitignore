@@ -1,4 +1,5 @@
 audio/*.aiff
 web/audio/*.m4a
+web/table.html
 
 .DS_Store

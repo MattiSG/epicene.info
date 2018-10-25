@@ -5,6 +5,8 @@ const basename = require('path').basename
 
 const DESTINATION = '../web/audio'
 
+module.exports.name = 'Synthèse VoiceOver'
+
 module.exports.generate = function generateAudio(markerName, marker) {
 	let aiffFile = `${DESTINATION}/${markerName}.aiff`
 	let m4aFile = `${DESTINATION}/${markerName}.m4a`

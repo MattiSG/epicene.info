@@ -18,6 +18,13 @@ const generators = [
 Promise.all(Object.keys(MARKERS).map(markerName => {
 	return Promise.all(generators.map(generator => generator.generate(markerName, MARKERS[markerName]).then(generator.html)))
 })).then(markerGeneratorsResults => {
-	let html = markerGeneratorsResults.map(results => results.join('</td><td>')).join('</td></tr><tr><td>')
-	console.log(`<tr><td>${html}</td></tr>`)
-})
+	return markerGeneratorsResults.map(results => results.join('</td><td>')).join('</td></tr><tr><td>')
+}).then(innerTbodyHtml => {
+	return `<tbody><tr><td>${innerTbodyHtml}</td></tr></tbody>`
+}).then(tbodyHtml => {
+	let headers = generators.map(generator => generator.name).join('</th><th>')
+
+	return `<thead><tr><th>${headers}</th></tr></thead>${tbodyHtml}`
+}).then(innerTableHtml => {
+	return `<meta charset="utf-8"><table><caption>Comparaison des différents marqueurs d’écriture inclusive</caption>${innerTableHtml}</table>`
+}).then(console.log)
