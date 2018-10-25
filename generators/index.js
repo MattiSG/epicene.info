@@ -8,10 +8,15 @@ const MARKERS = {
 	space:	' ',
 }
 
+const generators = [
+	require('./sentences'),
+	require('./audio'),
+]
 
-for (let markerName in MARKERS) {
-	let marker = MARKERS[markerName]
 
-	require('./sentences').generate(markerName, marker).then(console.log)
-	require('./audio').generate(markerName, marker).then(console.log)
-}
+Promise.all(Object.keys(MARKERS).map(markerName => {
+	return Promise.all(generators.map(generator => generator.generate(markerName, MARKERS[markerName]).then(generator.html)))
+})).then(markerGeneratorsResults => {
+	let html = markerGeneratorsResults.map(results => results.join('</td><td>')).join('</td></tr><tr><td>')
+	console.log(`<tr><td>${html}</td></tr>`)
+})
