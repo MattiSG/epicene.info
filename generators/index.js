@@ -1,8 +1,10 @@
 const MARKERS = {
-	bigDot:	'•',
+	bullet:	'•',
+	bulletOperator: '∙',
 	dash:	'-',
 	dot:	'.',
-	median:	'·',
+	hyphenationPoint: '‧',
+	middleDot:	'·',
 	none:	'',
 	slash:	'/',
 	space:	' ',
