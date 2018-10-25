@@ -9,6 +9,7 @@ const MARKERS = {
 }
 
 const generators = [
+	require('./character'),
 	require('./sentences'),
 	require('./audio'),
 ]
