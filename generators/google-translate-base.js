@@ -4,11 +4,11 @@
 
 const GoogleTranslate = require('@google-cloud/translate').Translate
 
-module.exports.name = 'Traduction Google Translate'
+module.exports.name = 'Traduction Google Translate (base)'
 
 module.exports.generate = function generateSentence(markerName, marker) {
 	return require('./sentences').generate(markerName, marker)
-		.then(sentence => new GoogleTranslate().translate(sentence, 'en'))
+		.then(sentence => new GoogleTranslate().translate(sentence, { to: 'en', model: 'base' }))
 		.then(results => results[0])
 }
 
