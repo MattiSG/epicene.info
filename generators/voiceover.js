@@ -3,7 +3,7 @@ const fs = require('fs').promises
 const basename = require('path').basename
 
 
-const DESTINATION = '../web/audio'
+const DESTINATION = `${__dirname}/../web/audio`
 
 module.exports.name = 'Synthèse VoiceOver'
 
