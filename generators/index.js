@@ -13,6 +13,7 @@ const MARKERS = {
 const generators = [
 	require('./character'),
 	require('./sentences'),
+	require('./doubleclick-macos'),
 	require('./voiceover'),
 	require('./google-translate-neural'),
 	require('./google-translate-base'),

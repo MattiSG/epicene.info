@@ -16,7 +16,7 @@ module.exports.generate = function generateAudio(markerName, marker) {
 		.then(() => {
 			console.error(`Wrote ${aiffFile}, converting to AAC`)
 			return exec(`ffmpeg -y -i ${aiffFile} -c:a aac -b:a 64k ${m4aFile}`)
-		}).then((stdout, stderr) => {
+		}).then(() => {
 			console.error(`Converted ${aiffFile}, wrote ${m4aFile}`)
 			return fs.unlink(aiffFile)
 		}).then(() => {
