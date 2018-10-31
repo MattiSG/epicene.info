@@ -3,13 +3,14 @@ const fs = require('fs').promises
 const basename = require('path').basename
 
 
-const DESTINATION = `${__dirname}/../web/audio`
+const DESTINATION = 'assets/audio'
+const TMP_DIR = require('os').tmpdir()
 
 module.exports.name = 'Synthèse VoiceOver'
 
 module.exports.generate = function generateAudio(markerName, marker) {
-	let aiffFile = `${DESTINATION}/${markerName}.aiff`
-	let m4aFile = `${DESTINATION}/${markerName}.m4a`
+	let aiffFile = `${TMP_DIR}/${markerName}.aiff`
+	let m4aFile = `${__dirname}/../${DESTINATION}/${markerName}.m4a`
 
 	return require('./sentences').generate(markerName, marker)
 		.then(sentence => exec(`say --output-file=${aiffFile} ${sentence}`))
@@ -27,5 +28,5 @@ module.exports.generate = function generateAudio(markerName, marker) {
 
 module.exports.html = function generateHtml(path) {
 	let filename = basename(path)
-	return `<audio controls src="audio/${filename}">`
+	return `<audio controls src="${DESTINATION}/${filename}">`
 }

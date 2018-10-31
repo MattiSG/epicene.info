@@ -31,5 +31,5 @@ Promise.all(Object.keys(MARKERS).map(markerName => {
 
 	return `<thead><tr><th>${headers}</th></tr></thead>${tbodyHtml}`
 }).then(innerTableHtml => {
-	return `<meta charset="utf-8"><table><caption>Comparaison des différents marqueurs d’écriture inclusive</caption>${innerTableHtml}</table>`
+	return `<table><caption>Comparaison des différents marqueurs d’écriture inclusive</caption>${innerTableHtml}</table>`
 }).then(console.log)

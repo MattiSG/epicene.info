@@ -1,3 +1,6 @@
+Normaliser et faciliter l'usage de l'écriture inclusive
+
+
 Générateurs
 -----------
 

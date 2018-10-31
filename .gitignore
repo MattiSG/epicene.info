@@ -1,6 +1,7 @@
-audio/*.aiff
-web/audio/*.m4a
-web/table.html
+generators/.tmp/*
+assets/audio/*.m4a
+_includes/comparison_table.html
+_site
 
 google-application-credentials.json
 
