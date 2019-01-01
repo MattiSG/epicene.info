@@ -15,7 +15,7 @@ const MARKERS = {
 	runicPunctuation:		'᛫',
 	slash:					'/',
 	space:					' ',
-	wordSeparatorMiddleDot:	'⸱',
+	// wordSeparatorMiddleDot:	'⸱',  // does not even render under macOS
 	zNotationSpot:			'⦁',
 }
 
