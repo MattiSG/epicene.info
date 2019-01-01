@@ -1,4 +1,4 @@
-module.exports.name = 'Nom unicode'
+module.exports.name = 'Code unicode'
 
 const UNICODE_METADATA_BY_CATEGORY = require('unicode/category')
 
