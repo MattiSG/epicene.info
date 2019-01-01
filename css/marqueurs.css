@@ -1,0 +1,27 @@
+body {
+	font-family: Helvetica Neue, sans-serif;
+	background-color: #E3E3E3;
+	color: #111;
+}
+
+audio {
+	max-width: 200px;
+}
+
+td {
+	border-top: 1px dotted #666;
+	font-size: 90%;
+}
+
+table pre {
+	text-align: center;
+	margin: .25em;
+}
+
+table .character {
+	font-family: monospace;
+	border: 1px dotted #66F;
+	border-radius: .2em;
+	background-color: #C6C6FF;
+	font-size: 200%;
+}

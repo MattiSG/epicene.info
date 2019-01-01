@@ -5,5 +5,5 @@ module.exports.generate = function generateCharacter(markerName, marker) {
 }
 
 module.exports.html = function generateHtml(text) {
-	return `<pre>${text}</pre>`
+	return `<pre><span class="character">${text}</span></pre>`
 }
