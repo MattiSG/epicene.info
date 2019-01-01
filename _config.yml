@@ -2,4 +2,10 @@ title: epicene.info
 description: "Normaliser et faciliter l'usage de l'écriture inclusive"
 url: "https://epicene.info"
 
-exclude: node_modules
+exclude: [
+  build.sh,
+  generators,
+  google-application-credentials.json,
+  node_modules,
+  package-lock.json
+]
