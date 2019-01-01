@@ -25,3 +25,10 @@ Certains générateurs ont des dépendances externes :
 - `doubleclick-macos` doit être exécuté sur macOS.
 
 Si vous ne souhaitez ou ne pouvez pas satisfaire ces dépendances, désactivez le générateur correspondant dans `generators/index.js` pour ne pas avoir d'erreur.
+
+
+Licence
+-------
+
+• Le code source est sous licence AGPL : vous pouvez librement le réutiliser, le redistribuer et le modifier tant que vous n'empêchez pas les autres de faire de même, ce qui est rendu possible en offrant vos améliorations à tou‧te‧s. Le plus simple pour cela consiste à ouvrir des _pull requests_ vers ce dépôt.
+• Les résultats et les commentaires générés sont sous licence [CC-BY](https://creativecommons.org/licenses/by/4.0/) : vous pouvez en faire ce que vous souhaitez, y compris un usage commercial (formation rémunérée, manuel…), tant que vous indiquez de manière claire que la source originale de ce travail est Matti Schneider (@matti_sg_fr) et si vous avez fait des modifications ou non.
