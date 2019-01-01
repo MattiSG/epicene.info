@@ -12,6 +12,7 @@ const MARKERS = {
 
 const generators = [
 	require('./character'),
+	require('./unicode-code'),
 	require('./unicode-name'),
 	require('./sentences'),
 	require('./doubleclick-macos'),
