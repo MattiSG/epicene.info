@@ -1,13 +1,22 @@
 const MARKERS = {
-	bullet:	'•',
-	bulletOperator: '∙',
-	dash:	'-',
-	dot:	'.',
-	hyphenationPoint: '‧',
-	middleDot:	'·',
-	none:	'',
-	slash:	'/',
-	space:	' ',
+	// aegeanWordSeparator:	'𐄁',  // Should be https://unicode-table.com/fr/10101/, always misinterpreted as https://unicode-table.com/fr/D800/ for unknown reasons
+	anoTeleia:				'·',
+	bullet:					'•',
+	bulletOperator:			'∙',
+	dagesh:					'ּ',
+	dash:					'-',
+	dot:					'.',
+	dotOperator:			'⋅',
+	hyphenationPoint:		'‧',
+	katakanaMiddleDot:		'・',
+	katakanaHalfWidth:		'･',
+	middleDot:				'·',
+	ringOperator:			'∘',
+	runicPunctuation:		'᛫',
+	slash:					'/',
+	space:					' ',
+	wordSeparatorMiddleDot:	'⸱',
+	zNotationSpot:			'⦁',
 }
 
 const generators = [
