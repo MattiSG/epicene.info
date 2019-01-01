@@ -6,7 +6,7 @@ const basename = require('path').basename
 const DESTINATION = 'assets/audio'
 const TMP_DIR = require('os').tmpdir()
 
-module.exports.name = 'Synthèse VoiceOver'
+module.exports.name = 'Synthèse VoiceOver macOS'
 
 module.exports.generate = function generateAudio(markerName, marker) {
 	let aiffFile = `${TMP_DIR}/${markerName}.aiff`
