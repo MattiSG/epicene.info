@@ -27,6 +27,15 @@ Certains générateurs ont des dépendances externes :
 Si vous ne souhaitez ou ne pouvez pas satisfaire ces dépendances, désactivez le générateur correspondant dans `generators/index.js` pour ne pas avoir d'erreur.
 
 
+Déploiement
+-----------
+
+Pour une personne ayant les droits de publication sur le dépôt principal :
+
+```
+./build.sh && node_modules/.bin/gh-pages -d _site
+```
+
 Licence
 -------
 
