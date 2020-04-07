@@ -17,6 +17,11 @@ const MARKERS = {
 	space:					' ',
 	// wordSeparatorMiddleDot:	'⸱',  // does not even render under macOS
 	zNotationSpot:			'⦁',
+	apostrophe:				"'",
+	rightSingleQuote:		'’',
+	reversedQuotationMark:	'‛',
+	heavyQuotationOrnament:	'❜',
+	heavyTurnedQuotationOrnament:	'❛',
 }
 
 const generators = [

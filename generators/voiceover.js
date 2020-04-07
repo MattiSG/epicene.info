@@ -13,7 +13,7 @@ module.exports.generate = function generateAudio(markerName, marker) {
 	let m4aFile = `${__dirname}/../${DESTINATION}/${markerName}.m4a`
 
 	return require('./sentences').generate(markerName, marker)
-		.then(sentence => exec(`say --output-file=${aiffFile} ${sentence}`))
+		.then(sentence => exec(`say --output-file=${aiffFile} ${sentence.replace("'", "\\'")}`))
 		.then(() => {
 			console.error(`Wrote ${aiffFile}, converting to AAC`)
 			return exec(`ffmpeg -y -i ${aiffFile} -c:a aac -b:a 64k ${m4aFile}`)
