@@ -8,6 +8,6 @@ Ce site a pour objectif de normaliser et faciliter l'usage de l'écriture inclus
 
 {% for page in site.pages %}
 {% if page.title %}
-##[{{ page.title }}]({{ page.url }})
+## [{{ page.title }}]({{ page.url }})
 {% endif %}
 {% endfor %}
