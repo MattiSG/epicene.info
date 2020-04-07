@@ -8,6 +8,7 @@ Installer [Jekyll](https://jekyllrb.com), cloner le dépôt, `cd` dedans puis :
 
 ```
 npm install
+bundle install
 ./build.sh
 ```
 
