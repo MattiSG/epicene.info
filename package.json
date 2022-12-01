@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@google-cloud/translate": "^6.3.0",
+    "unicode": "^13.0.0"
+  }
+}
