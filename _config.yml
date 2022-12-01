@@ -1,6 +1,7 @@
 title: epicene.info
 description: "Normaliser et faciliter l'usage de l'écriture inclusive"
-url: "https://epicene.info"
+baseurl: /epicene.info
+url: https://mattisg.github.io
 
 exclude: [
   build.sh,
